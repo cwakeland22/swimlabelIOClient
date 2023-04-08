@@ -37,7 +37,7 @@
   }
 }
 
-.button-19, .button-20 {
+[class^='button-']{
   appearance: button;
   background-color: #807306;
   border: solid transparent;
@@ -68,11 +68,33 @@
   width: 11.2%;
 }
 
-.button-20 {
+.button-unsure {
   width: 44.44%
 }
 
-.button-19:after, .button-20:after {
+.button-free {
+  background-color: #045d86;
+}
+
+.button-back {
+  background-color: #011985;
+}
+
+.button-fly {
+  background-color: #581221;
+}
+
+.button-breast {
+  background-color: #1b5f24;
+}
+
+.button-unsure {
+  background-color: #3f3f3f;
+}
+
+
+
+[class^='button-']:after {
   background-clip: padding-box;
   background-color: #f6c31c;
   border: solid transparent;
@@ -87,23 +109,43 @@
   z-index: -1;
 }
 
-.button-19:main,
-.button-19:focus, .button-20:focus {
+.button-free:after {
+  background-color: #05a1e9;
+}
+
+.button-back:after {
+  background-color: #052fe9;
+}
+
+.button-fly:after {
+  background-color: #bb2a4a;
+}
+
+.button-breast:after {
+  background-color: #40cf53;
+}
+
+.button-unsure:after {
+  background-color: #929292;
+}
+
+.button-free:main,
+[class^='button-']:focus {
   user-select: auto;
 }
 
-.button-19:hover:not(:disabled), .button-20:hover:not(:disabled) {
+[class^='button-']:hover:not(:disabled) {
   filter: brightness(1.1);
   -webkit-filter: brightness(1.1);
 }
 
-.button-19:active, .button-20:active {
+[class^='button-']:active {
   background-color: #7a1b1b;
   border-color: #3a2f00;
   filter: brightness(0.8);
   transform: scale(.96);
 }
 
-.button-19:disabled .button-20:disabled{
+[class^='button-']:disabled{
   cursor: auto;
 }

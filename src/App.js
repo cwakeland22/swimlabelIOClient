@@ -102,28 +102,28 @@ function App() {
         <img src={imgtitle} alt='test' id = 'Image'></img>
         
       <div className="Buttons">
-        <button class = "button-19" type="submit" onClick={() => {
+        <button className = "button-free" type="submit" onClick={() => {
           postIm(document.getElementById("Image").src,0);
           upIm();
           setCount(count+1);
           }}>
             Free
             </button>
-            <button class = "button-19" type="submit" onClick={() => {
+            <button className = "button-back" type="submit" onClick={() => {
           postIm(document.getElementById("Image").src,1);
           upIm();
           setCount(count+1);
           }}>
             Back
             </button>
-            <button class = "button-19" type="submit" onClick={() => {
+            <button className = "button-breast" type="submit" onClick={() => {
           postIm(document.getElementById("Image").src,2);
           upIm();
           setCount(count+1);
           }}>
             Breast
             </button>
-            <button class = "button-19" type="submit" onClick={() => {
+            <button className = "button-fly" type="submit" onClick={() => {
           postIm(document.getElementById("Image").src,3);
           upIm();
           setCount(count+1);
@@ -131,7 +131,7 @@ function App() {
             Fly
             </button>
             <div>
-            <button class = "button-20" type="submit" onClick={() => {
+            <button className = "button-unsure" type="submit" onClick={() => {
           postIm(document.getElementById("Image").src,4);
           upIm();
           setCount(count+1);
